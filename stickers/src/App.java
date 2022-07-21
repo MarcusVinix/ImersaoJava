@@ -9,7 +9,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         // fazer uma conexão HTTP e buscar os top 250 filmes
         String urlNasa = "https://api.mocki.io/v2/549a5d8b/NASA-APOD";
-        String urlIMDB = "https://api.mocki.io/v2/549a5d8b/Top250Movies";
+        String urlIMDB = "http://localhost:8080/linguagens";
 
         var http = new ClientHttp();
         String jsonNasa = http.getData(urlNasa);
